@@ -87,7 +87,7 @@ export const AnimatedTestimonials = ({
                   className="absolute inset-0 origin-bottom"
                 >
                   {/* FIX: Replaced next/image with a standard <img> tag */}
-                  <Image
+                  <img
                     src={testimonial.src}
                     alt={testimonial.name}
                     draggable={false}

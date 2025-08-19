@@ -15,7 +15,8 @@ const NumberTicker = ({
 }) => {
     const [count, setCount] = useState(0);
     const ref = React.useRef<HTMLSpanElement>(null);
-    const isInView = useInView(ref, { once: true, margin: "-100px" });
+    // FIX: Adjusted the margin to be more reliable on mobile devices.
+    const isInView = useInView(ref, { once: true, margin: "0px 0px -50px 0px" });
 
     useEffect(() => {
         if (!isInView) return;
@@ -88,7 +89,6 @@ function Countup() {
                     {stats.map((stat, index) => (
                         <motion.div
                             key={stat.title}
-                            // Added transition and hover effect classes
                             className="text-center bg-white dark:bg-neutral-800 p-8 rounded-lg shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
