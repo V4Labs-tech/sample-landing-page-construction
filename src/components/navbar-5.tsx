@@ -37,40 +37,34 @@ export const Navbar5 = () => {
     {
       title: "CNC LATHE",
       description: "Precision machining with our CNC lathe",
-      href: "#",
-      img:"/ima"
+      href: "/tools",
     },
     {
       title: "TRAUB",
       description: "Advanced machining with our TRAUB machine",
-      href: "#",
-      img:"/ima"
+      href: "/tools",
     },
     {
       title: "CNC MILLING",
       description: "High-precision CNC milling services",
-      href: "#",
-      img:"/ima"
+      href: "/tools",
     },
     {
       title: "SURFACE GRINDING",
       description: "Precision surface grinding for smooth finishes",
-      href: "#",
-      img:"/ima"
+      href: "/tools",
 
     },
     {
       title: "Thread Rolling",
       description: "Efficient thread rolling for strong threads",
-      href: "#",
-      img:"/ima"
+      href: "/tools",
 
     },
     {
       title: "Centreless Grinding",
       description: "Precision centreless grinding for cylindrical parts",
-      href: "#",
-      img:"/ima"
+      href: "/tools",
     },
   ];
 
@@ -114,23 +108,23 @@ export const Navbar5 = () => {
                   </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <Link href="#" className={navigationMenuTriggerStyle()}>
+                  <Link href="/about-us" className={navigationMenuTriggerStyle()}>
                     About Us
                   </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <Link href="#" className={navigationMenuTriggerStyle()}>
+                  <Link href="team" className={navigationMenuTriggerStyle()}>
                     Team
                   </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <Link href="#" className={navigationMenuTriggerStyle()}>
+                  <Link href="/certificates" className={navigationMenuTriggerStyle()}>
                     Certificates
                   </Link>
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
-            <Button>Contact Us</Button>
+            <Link href={'/contact-us'}> <Button>Contact Us</Button></Link>
           </div>
 
           {/* == Mobile Navigation (Hamburger Menu) == */}
@@ -185,19 +179,19 @@ export const Navbar5 = () => {
                 </Accordion>
 
                 <div className="flex flex-col gap-6 text-base font-medium">
-                  <Link href="#" onClick={() => setIsOpen(false)}>
-                    Solutions
+                  <Link href="/about-us" onClick={() => setIsOpen(false)}>
+                    About Us
                   </Link>
-                  <Link href="#" onClick={() => setIsOpen(false)}>
-                    Blogs
+                  <Link href="/team" onClick={() => setIsOpen(false)}>
+                    Team
                   </Link>
-                  <Link href="#" onClick={() => setIsOpen(false)}>
-                    Contact
+                  <Link href="/certificates" onClick={() => setIsOpen(false)}>
+                    Certificates
                   </Link>
                 </div>
 
                 <div className="mt-6 flex flex-col gap-4">
-                  <Button onClick={() => setIsOpen(false)}>Book a Call</Button>
+                  <Link href={'/contact-us'}> <Button>Contact Us</Button></Link>
                 </div>
               </div>
             </SheetContent>

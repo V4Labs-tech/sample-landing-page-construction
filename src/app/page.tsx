@@ -1,4 +1,4 @@
-import Clients from "@/components/Clients";
+// import Clients from "@/components/Clients";
 import Countup from "@/components/Countup";
 import HeroSection from "@/components/HeroSection";
 import Products from "@/components/Products";
@@ -11,7 +11,7 @@ export default function Home() {
     <Countup />
     <WhatWeOffer />
     <Products />
-    <Clients />
+    {/* <Clients /> */}
     </>
   );
 }

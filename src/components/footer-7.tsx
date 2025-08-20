@@ -32,21 +32,20 @@ const defaultSections = [
   {
     title: "Core Services",
     links: [
-      { name: "CNC Lathe Machining", href: "#" },
-      { name: "Milling", href: "#" },
-      { name: "Traub Machine Operations", href: "#" },
-      { name: "Drilling", href: "#" },
-      { name: "Surface Grinding", href: "#" },
-      { name: "Centerless Grinding", href: "#" },
-      { name: "Thread Rolling", href: "#" },
+      { name: "CNC Lathe Machining", href: "/tools" },
+      { name: "Milling", href: "/tools" },
+      { name: "Traub Machine Operations", href: "/tools" },
+      { name: "Drilling", href: "/tools" },
+      { name: "Surface Grinding", href: "/tools" },
+      { name: "Centerless Grinding", href: "/tools" },
+      { name: "Thread Rolling", href: "/tools" },
     ],
   },
   {
     title: "Company",
     links: [
-      { name: "About Us", href: "#" },
-      { name: "Our Clients", href: "#" },
-      { name: "Certifications", href: "#" },
+      { name: "About Us", href: "/about-us" },
+      { name: "Certifications", href: "/certificates" },
     ],
   },
   {
@@ -70,7 +69,7 @@ const defaultLegalLinks = [
 export const Footer7 = ({
   // Updated logo information
   logo = {
-    url: "#",
+    url: "/",
     src: "https://placehold.co/40x40/000000/FFFFFF.png?text=SR", // Simple placeholder logo
     alt: "SR ENGG WORKS Logo",
     title: "SR ENGG WORKS",
