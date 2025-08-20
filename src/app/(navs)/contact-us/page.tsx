@@ -85,8 +85,6 @@ function ContactPage() {
                         {contactMethods.map((method) => (
                             <motion.a
                                 key={method.title}
-                                href={method.href}
-                                target="_blank"
                                 rel="noopener noreferrer"
                                 className="flex flex-col items-center text-center lg:flex-row lg:text-left bg-gray-50 dark:bg-neutral-900 p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
                                 variants={itemVariants}
